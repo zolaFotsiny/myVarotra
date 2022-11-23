@@ -1,0 +1,14 @@
+<p>contact works!</p>
+
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <input type = "text" name = "fullName" placeholder = "Your full name" ngModel>
+  <br/>
+
+  <input type = "email" name = "email" placeholder = "Your email" ngModel *required>
+  <br/>
+
+  <textarea name = "message" placeholder = "Your message" ngModel></textarea>
+  <br/>
+  <input class="" type = "submit" value = "Send">
+</form>
+<h1> {{myusername}}</h1>
